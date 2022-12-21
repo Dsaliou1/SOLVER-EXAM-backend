@@ -1,5 +1,6 @@
-from .. import ma
-from .utilisateurs import Utilisateur
+from ... import ma
+from ..utilisateurs import Utilisateur
+
 
 class SchemaUtilisateur(ma.SQLAlchemySchema):
     class Meta:
