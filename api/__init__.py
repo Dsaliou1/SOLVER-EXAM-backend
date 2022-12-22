@@ -12,26 +12,26 @@ ma.init_app(app)
 apifairy=APIFairy()
 apifairy.init_app(app)
 
-from .views.utilisateurs_view import utilisateurs
-app.register_blueprint(utilisateurs, url_prefix="/api")
+from .views.utilisateur_view import utilisateur
+app.register_blueprint(utilisateur, url_prefix="/api")
 
 from .views.candidat_view import candidat
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(candidat, url_prefix="/api")
 
 from .views.centre_view import centre
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(centre, url_prefix="/api")
 
 from .views.copie_view import copie
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(copie, url_prefix="/api")
 
 from .views.correcteur_view import correcteur
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(correcteur, url_prefix="/api")
 
 from .views.epreuve_view import epreuve
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(epreuve, url_prefix="/api")
 
 from .views.membre_secretariat_view import membre_secretariat
-app.register_blueprint(utilisateurs, url_prefix="/api")
+app.register_blueprint(membre_secretariat, url_prefix="/api")
 
 @app.route("/")
 def index():  # pragma: no cover

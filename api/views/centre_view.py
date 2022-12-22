@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.centre import Centre
+from ..models.models import Centre
 from ..models.schemas.schema_centre import SchemaCentre
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response

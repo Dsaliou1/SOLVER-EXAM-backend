@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.correcteur import Correcteur
+from ..models.models import Correcteur
 from ..models.schemas.schema_correcteur import SchemaCorrecteur
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response

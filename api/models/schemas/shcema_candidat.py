@@ -9,8 +9,6 @@ class SchemaCandidat(ma.SQLAlchemySchema):
 
     id_candidat = ma.auto_field(dump_only=True)
     numero_table = ma.Integer(required=True)
-    prenom = ma.String(required=True)
-    nom = ma.String(required=True)
     lieu_naissance = ma.String(required=True)
     etablissement = ma.String(required=True)
     statut = ma.String(required=True)

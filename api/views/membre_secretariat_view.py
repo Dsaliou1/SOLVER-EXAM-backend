@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.membre_secretariat import MembreSecretariat
+from ..models.models import MembreSecretariat
 from ..models.schemas.schema_membre_secretariat import SchemaMembreSecretariat
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response

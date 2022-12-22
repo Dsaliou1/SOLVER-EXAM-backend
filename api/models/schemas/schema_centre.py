@@ -7,7 +7,7 @@ class SchemaCentre(ma.SQLAlchemySchema):
         model = Centre
         ordered = True
 
-    id_centre = ma.String(required=True)
+    id_centre = ma.String(dump_only=True)
     session = ma.String(required=True)  # annee
     nom_centre = ma.String(required=True)
     ia = ma.String(required=True)

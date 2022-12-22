@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.copie import Copie
+from ..models.models import Copie
 from ..models.schemas.schema_copie import SchemaCopie
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response

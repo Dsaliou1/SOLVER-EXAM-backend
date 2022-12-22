@@ -7,7 +7,7 @@ class SchemaEpreuve(ma.SQLAlchemySchema):
         model = Epreuve
         ordered = True
 
-    id_epreuve = ma.Integer(required=True)
+    id_epreuve = ma.Integer(dump_only=True)
     libelle = ma.String(required=True)
     coefficient = ma.Integer(required=True)
     type_epreuve = ma.String(required=True)  # 1er tour ou 2nd tour

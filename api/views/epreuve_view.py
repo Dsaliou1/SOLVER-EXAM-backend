@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.epreuve import Epreuve
+from ..models.models import Epreuve
 from ..models.schemas.schema_epreuve import SchemaEpreuve
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response

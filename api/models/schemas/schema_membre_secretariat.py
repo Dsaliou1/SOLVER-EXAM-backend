@@ -8,9 +8,4 @@ class SchemaMembreSecretariat(ma.SQLAlchemySchema):
         ordered = True
 
     id_membre_secretariat = ma.Integer(dump_only=True)
-    prenom = ma.String(required=True)
-    nom = ma.String(required=True)
-    telephone = ma.String(required=True)
-    profil = ma.String(required=True)
-
 

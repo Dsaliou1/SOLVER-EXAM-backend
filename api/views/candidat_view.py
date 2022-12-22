@@ -1,5 +1,5 @@
 from .. import db,app  #qu'est-ce qu'il fait?
-from ..models.candidat import Candidat
+from ..models.models import Candidat
 from ..models.schemas.shcema_candidat import SchemaCandidat
 from flask import jsonify, Blueprint, request, abort
 from apifairy import authenticate, body, response
